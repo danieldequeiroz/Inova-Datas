@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriados</title>
+</head>
+<body>
+    <h1>Feriados</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% feriados.forEach((feriado) => { %>
+                <tr>
+                    <td><%= feriado.date %></td>
+                    <td><%= feriado.name %></td>
+                </tr>
+                <p>O número de dias úteis entre as datas é: <%= totalDays %></p>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
